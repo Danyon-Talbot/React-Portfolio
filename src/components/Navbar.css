@@ -1,0 +1,39 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #333; /* Change the background color as needed */
+    padding: 10px 0; /* Adjust the padding as needed */
+    z-index: 100; /* Ensure it appears above other elements */
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center; /* Vertically center the items */
+    min-width: 100vh; /* Make the navbar full width */
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin-left: 20px; /* Adjust the spacing between links */
+    margin-right: 20px;
+}
+
+.nav-list li:first-child {
+    margin-left: 0; /* Remove margin for the first link */
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white; /* Link color */
+}
+
+/* Optional: Add responsive styles for different screen sizes */
+@media screen and (max-width: 768px) {
+.navbar {
+    width: 100vh;
+}
+}
