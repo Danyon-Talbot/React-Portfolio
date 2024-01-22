@@ -2,7 +2,7 @@ import React from "react";
 
 export const Portfolio = () => {
     return (
-        <div>
+        <div className="text-container">
             Portfolio
         </div>
     )
