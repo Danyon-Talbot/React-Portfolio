@@ -10,7 +10,7 @@ export const Portfolio = () => {
                 <div className="card-content">
                 <a href="https://danyon-talbot.github.io/P1-ScrollCinema/" className="card-title">ScrollCinema</a>
                 <a href="https://github.com/Danyon-Talbot/P1-ScrollCinema" className="github-link">
-                        <img src="/images/assets/github-mark.png" alt="GitHub"/>
+                        <img src="/images/github-mark.png" alt="GitHub"/>
                 </a>
                 </div>
             </div>
