@@ -27,45 +27,45 @@ export const Portfolio = () => {
             </div>
             <div className="card">
                 <a href="https://jate-just-another-text-editor.onrender.com/">
-                    <img className="card-image" src="../../src/assets/JATE.png" alt="HTML Systems Image"/>
+                    <img className="card-image" src="/assets/JATE.png" alt="HTML Systems Image"/>
                 </a>
                 <div className="card-content">
                 <a href="https://jate-just-another-text-editor.onrender.com/" className="card-title">JATE Text Editor</a>
                 <a href="https://github.com/Danyon-Talbot/PWA-Text-Editor" className="github-link">
-                        <img src="../../src/assets/github-mark.png" alt="GitHub"/>
+                        <img src="/assets/github-mark.png" alt="GitHub"/>
                 </a>
                 </div>
             </div>
             <div className="card">
                 <a href="https://note-taker-lf4n.onrender.com/">
-                    <img className="card-image" src="../../src/assets/Note Taker.png" alt="HTML Systems Image"/>
+                    <img className="card-image" src="/assets/Note Taker.png" alt="HTML Systems Image"/>
                 </a>
                 <div className="card-content">
                 <a href="https://note-taker-lf4n.onrender.com/" className="card-title">Note Taker</a>
                 <a href="https://github.com/Danyon-Talbot/note-taker" className="github-link">
-                        <img src="../../src/assets/github-mark.png" alt="GitHub"/>
+                        <img src="/assets/github-mark.png" alt="GitHub"/>
                 </a>
                 </div>
             </div>
             <div className="card">
                 <a href="https://danyon-talbot.github.io/Daily-Planner/">
-                    <img className="card-image" src="../../src/assets/Daily Planner.jpeg" alt="HTML Systems Image"/>
+                    <img className="card-image" src="/assets/Daily Planner.jpeg" alt="HTML Systems Image"/>
                 </a>
                 <div className="card-content">
                 <a href="https://danyon-talbot.github.io/Daily-Planner/" className="card-title">Daily Planner</a>
                 <a href="https://github.com/Danyon-Talbot/Daily-Planner" className="github-link">
-                        <img src="../../src/assets/github-mark.png" alt="GitHub"/>
+                        <img src="/assets/github-mark.png" alt="GitHub"/>
                 </a>
                 </div>
             </div>
             <div className="card">
                 <a href="https://danyon-talbot.github.io/JavaScript-Quiz/">
-                    <img className="card-image" src="../../src/assets/JS Quiz.jpeg" alt="HTML Systems Image"/>
+                    <img className="card-image" src="/assets/JS Quiz.jpeg" alt="HTML Systems Image"/>
                 </a>
                 <div className="card-content">
                 <a href="https://danyon-talbot.github.io/JavaScript-Quiz/" className="card-title">JavaScript Quiz</a>
                 <a href="https://github.com/Danyon-Talbot/JavaScript-Quiz" className="github-link">
-                        <img src="../../src/assets/github-mark.png" alt="GitHub"/>
+                        <img src="/assets/github-mark.png" alt="GitHub"/>
                 </a>
                 </div>
             </div>
