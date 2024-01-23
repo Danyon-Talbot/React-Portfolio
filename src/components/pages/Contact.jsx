@@ -19,6 +19,17 @@ export function Contact() {
     setFormData({ ...formData, [name]: value });
   };
 
+  const handleBlur = (e) => {
+    const { name, value } = e.target;
+
+    // Validate and set error message when a field is required
+    if (!value.trim()) {
+      setFormErrors({ ...formErrors, [`${name}Error`]: `${name} is required` });
+    } else {
+      setFormErrors({ ...formErrors, [`${name}Error`]: "" });
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -27,21 +38,15 @@ export function Contact() {
 
     if (!formData.name.trim()) {
       newFormErrors.nameError = "Name is required";
-    } else {
-      newFormErrors.nameError = "";
     }
 
     // Validate email format (You can use a library like "validator" for more robust email validation)
     if (!formData.email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
       newFormErrors.emailError = "Email is invalid";
-    } else {
-      newFormErrors.emailError = "";
     }
 
     if (!formData.message.trim()) {
       newFormErrors.messageError = "Message is required";
-    } else {
-      newFormErrors.messageError = "";
     }
 
     setFormErrors(newFormErrors);
@@ -67,6 +72,7 @@ export function Contact() {
             name="name"
             value={formData.name}
             onChange={handleChange}
+            onBlur={handleBlur}
           />
           <span className="error">{formErrors.nameError}</span>
         </div>
@@ -78,6 +84,7 @@ export function Contact() {
             name="email"
             value={formData.email}
             onChange={handleChange}
+            onBlur={handleBlur}
           />
           <span className="error">{formErrors.emailError}</span>
         </div>
@@ -88,6 +95,7 @@ export function Contact() {
             name="message"
             value={formData.message}
             onChange={handleChange}
+            onBlur={handleBlur}
           />
           <span className="error">{formErrors.messageError}</span>
         </div>
