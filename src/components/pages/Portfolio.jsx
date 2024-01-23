@@ -16,7 +16,7 @@ export const Portfolio = () => {
             </div>
             <div className="card">
                 <a href="https://sleepy-castle-96589-687879c1fd68.herokuapp.com/login">
-                    <img className="card-image" src="../../src/assets/CalShare.png" alt="HTML Systems Image"/>
+                    <img className="card-image" src="/images/CalShare.png" alt="HTML Systems Image"/>
                 </a>
                 <div className="card-content">
                 <a href="https://sleepy-castle-96589-687879c1fd68.herokuapp.com/login" className="card-title">CalShare</a>
