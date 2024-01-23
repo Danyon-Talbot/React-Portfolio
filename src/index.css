@@ -10,22 +10,18 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-width: 100vh;
+  --dark-blue: rgb(12, 30, 78);
+  --pale-blue: rgb(200, 229, 247);
+  --aliceblue: rgb(240, 248, 255);
+  --blue-grey: rgb(40, 60, 80);
 }
 
 .App {
   color: black;
   display: flex;
   flex-direction: column; /* Stack children vertically */
-}
-
-.text-container {
-  padding: 1%;
-  background-color: #fff; /* Add a background color to separate from navbar */
-  margin-top: 0; /* Add margin to push it below the navbar */
-  display: flex;
-  flex-direction: column; /* Stack children in a column */
-  flex-grow: 1; /* Allow the text-container to expand to fill available space */
-  justify-content: center;
+  min-width: 100vh;
 }
 
 .footer {
@@ -53,14 +49,104 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column; /* Ensure children stack vertically */
-  align-items: center; /* Center-align content horizontally */
-  min-width: 100%;
-  max-height: 100vh;
+  align-items: start; /* Center-align content horizontally */
+  max-width: 100vh;
+  padding: 0;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+
+.text-container {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #fff; /* Add a background color to separate from navbar */
+  margin-top: 5%; /* Add margin to push it below the navbar */
+  display: flex;
+  flex-direction: column; /* Stack children in a column */
+  flex-grow: 1; /* Allow the text-container to expand to fill available space */
+  justify-content: center;
+  max-width: 100vh;
+  margin-left: 10%;
+}
+
+
+/* PortfolioPage.css */
+.portfolio-page {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  background-color: #fff; /* Add a background color to separate from navbar */
+  margin-top: 2%; /* Add margin to push it below the navbar */
+  display: flex;
+  flex-direction: column; /* Stack children in a column */
+  flex-grow: 1; /* Allow the text-container to expand to fill available space */
+  max-width: 100vh;
+  align-items: center;
+} 
+
+
+.card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: calc(70% - 20px); /* Adjust the width as needed for the 2-column layout */ 
+}
+
+.card-title {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  white-space: nowrap;
+  background-color: var(--pale-blue);
+  color: var(--dark-blue);
+  max-width: 70%;
+  max-height: 50%;
+  padding: 5px;
+  border-style: solid;
+  border-color: var(--dark-blue);
+  border-width: 1px;
+  font-size: larger;
+}
+
+.card-image {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  background-size: cover; /* Ensure the background image covers the entire div */
+  background-repeat: no-repeat; /* Prevent background image from repeating */
+  background-position: center; /* Center the background image */
+  border-style: solid;
+  opacity: 0.4;
+  transition: 0.5s ease;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.card-image:hover {
+    opacity: 1.0;
+}
+
+.github-link {
+  position: absolute;
+  top: 10px; /* Adjust the top position as needed */
+  right: 10px; /* Adjust the right position as needed */
+}
+
+.github-link img {
+  width: 30px;
+  height: 30px;
 }
 
 button {
@@ -87,10 +173,19 @@ button:focus-visible {
 
 /* Update your media query to apply the new class to text-container */
 @media screen and (max-width: 768px) {
-  .text-container {
-    margin-top: 0; /* Remove margin at the top */
+  .text-container{
+    margin-top: 25%; /* Remove margin at the top */
     padding-top: 0; /* Add padding to separate from navbar */
     padding-bottom: 20px; /* Add padding at the bottom */
+    font-size: smaller;
+  }
+
+  .portfolio-page {
+    margin-top: 30%;
+  }
+
+  .card {
+    width: calc(50% - 20px); /* Adjust the width as needed for the 2-column layout */
   }
 }
 
