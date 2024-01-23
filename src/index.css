@@ -178,6 +178,7 @@ button:focus-visible {
     padding-top: 0; /* Add padding to separate from navbar */
     padding-bottom: 20px; /* Add padding at the bottom */
     font-size: smaller;
+    max-width: 500px;
   }
 
   .portfolio-page {
