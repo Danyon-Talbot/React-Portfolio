@@ -6,7 +6,7 @@ export const About = () => {
             <div className="profile-container">
                 <h1>About Me</h1>
                 <a>
-                    <img className="profile-picture" src="/assets/Avatar.png" alt="Profile Picture"></img>
+                    <img className="profile-picture" src="/images/Avatar.png" alt="Profile Picture"></img>
                 </a>
             </div>
             <div>

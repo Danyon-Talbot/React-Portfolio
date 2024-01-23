@@ -1,7 +1,7 @@
 import React from "react";
 
 export const Resume = () => {
-    const resumeFilePath = "/assets/Resume Fill In.jpeg";
+    const resumeFilePath = "/images/Resume Fill In.jpeg";
 
     return (
         <div className="text-container">
