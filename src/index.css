@@ -1,12 +1,11 @@
+/* Index.css */
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -15,14 +14,51 @@
 
 .App {
   color: black;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
 }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #333; /* Change the background color as needed */
+  padding: 10px 0; /* Adjust the padding as needed */
+  z-index: 100; /* Ensure it appears above other elements */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Align items to both ends */
+  align-items: center; /* Vertically center the items */
+  min-width: 100%; /* Make the navbar full width */
+  height: 30px;
+}
+
+.text-container {
+  padding: 1%;
+  background-color: #fff; /* Add a background color to separate from navbar */
+  margin-top: 50px; /* Add margin to push it below the navbar */
+  display: flex;
+  flex-direction: column; /* Stack children in a column */
+  flex-grow: 1; /* Allow the text-container to expand to fill available space */
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #333; /* Change the background color as needed */
+  padding: 10px 0; /* Adjust the padding as needed */
+  z-index: 100; /* Ensure it appears above other elements */
+  text-align: center;
+}
 
 a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -30,7 +66,8 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  flex-direction: column; /* Ensure children stack vertically */
+  align-items: center; /* Center-align content horizontally */
   min-width: 100vh;
   max-height: 100vh;
 }
@@ -51,9 +88,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;

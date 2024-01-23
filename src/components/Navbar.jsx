@@ -5,6 +5,7 @@ import './Navbar.css'
 export const Navbar = () => {
     return (
        <nav className='navbar'>
+            <Link className='home-page' to='/about'>Danyon Talbot</Link>
         <ul className='nav-list'>
             <li>
                 <Link to='/about'>About</Link>

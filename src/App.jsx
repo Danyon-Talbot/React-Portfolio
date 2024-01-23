@@ -5,6 +5,7 @@ import { Portfolio } from './components/pages/Portfolio';
 import { Contact } from './components/pages/Contact';
 import { Resume } from './components/pages/Resume';
 import { About } from './components/pages/About';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/resume" element={<Resume />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
