@@ -18,28 +18,14 @@
   flex-direction: column; /* Stack children vertically */
 }
 
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: #333; /* Change the background color as needed */
-  padding: 10px 0; /* Adjust the padding as needed */
-  z-index: 100; /* Ensure it appears above other elements */
-  display: flex; /* Use flexbox for layout */
-  justify-content: space-between; /* Align items to both ends */
-  align-items: center; /* Vertically center the items */
-  min-width: 100%; /* Make the navbar full width */
-  height: 30px;
-}
-
 .text-container {
   padding: 1%;
   background-color: #fff; /* Add a background color to separate from navbar */
-  margin-top: 50px; /* Add margin to push it below the navbar */
+  margin-top: 0; /* Add margin to push it below the navbar */
   display: flex;
   flex-direction: column; /* Stack children in a column */
   flex-grow: 1; /* Allow the text-container to expand to fill available space */
+  justify-content: center;
 }
 
 .footer {
@@ -68,7 +54,7 @@ body {
   display: flex;
   flex-direction: column; /* Ensure children stack vertically */
   align-items: center; /* Center-align content horizontally */
-  min-width: 100vh;
+  min-width: 100%;
   max-height: 100vh;
 }
 
@@ -96,6 +82,16 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+
+/* Update your media query to apply the new class to text-container */
+@media screen and (max-width: 768px) {
+  .text-container {
+    margin-top: 0; /* Remove margin at the top */
+    padding-top: 0; /* Add padding to separate from navbar */
+    padding-bottom: 20px; /* Add padding at the bottom */
+  }
 }
 
 @media (prefers-color-scheme: light) {
