@@ -4,6 +4,7 @@ export const About = () => {
     return (
         <div className="text-container">
             <div className="profile-container">
+                <h1>About Me</h1>
                 <a>
                     <img className="profile-picture" src="../../src/assets/Avatar.png" alt="Profile Picture"></img>
                 </a>
