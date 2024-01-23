@@ -7,7 +7,7 @@ export const Footer = () => {
        <nav className='footer'>
         <ul className='footer-list'>
             <li>
-                <Link to='/'>GitHub</Link>
+                <Link to='https://github.com/Danyon-Talbot'>GitHub</Link>
             </li>
             <li>
                 <Link to='/'>LinkedIn</Link>
